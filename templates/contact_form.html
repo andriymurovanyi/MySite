@@ -1,0 +1,24 @@
+{% extends "wrapper.html" %}
+
+{% block content %}
+    <h2 align="center" class="text-info">The answers to your questions may be below: </h2><br>
+    <div class="d-flex justify-content-center">
+        <div class="some-class" style="width: 300px">
+            {% for item in values %}
+                {% if item == 'Telegram' %}
+                    <a href="https://t.me/hidEncoder"
+                       class="btn btn-outline-info btn-lg btn-block" target="_blank">{{item}}
+                    </a><br>
+                {% elif item == 'GitHub' %}
+                     <a href="https://github.com/andriymurovanyi"
+                        class="btn btn-outline-info btn-lg btn-block" target="_blank">{{item}}
+                     </a><br>
+                {% else %}
+                    <label href="" class="btn btn-outline-info btn-lg btn-block" >
+                        {{item}}
+                    </label><br>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

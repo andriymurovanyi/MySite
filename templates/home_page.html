@@ -1,0 +1,76 @@
+{% extends "wrapper.html" %}
+
+{% block content %}
+    {% load static %}
+
+    <div class="wrapper">
+        <div class="header_wrapper">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a href="/login" class="Button-2 btn btn-success btn-lg">Sign in</a>
+            </div>
+            <header>
+                <div class="header_logo">
+                    <img class="logo" src="{% static 'img/logo.png' %}" alt="logotype">
+                    <p class="talk">Talk to people <br>
+                        artificial language</p>
+                </div>
+            </header>
+        </div>
+        <main>
+            <h1 class="main-title">What is Elinguage?</h1>
+            <p class="desc">Web platform for
+                communication using different
+                artificial languages. New idea for
+                your and your <br> friends fun. Enjoy
+                yor conversation!</p>
+            <h1 class="main-title">How it works ?</h1>
+            <div class="blocks">
+                <div class="block-1">
+                    <img src="{% static 'img/plus.png' %}" alt="Start">
+                    <h2>Start</h2>
+                    <p>
+                        Register or sign in
+                    </p>
+                </div>
+                <div class="block-2">
+                    <img src="{% static 'img/translation.png' %}" alt="Translate">
+                    <h2>Translate</h2>
+                    <p>
+                        Write word or expression <br>,
+                        choose the language <br>
+                        and translate
+                    </p>
+                </div>
+                <div class="block-3">
+                    <img src="{% static 'img/group2.png' %}" alt="Share">
+                    <h2>Share</h2>
+                    <p>
+                        Share the five-letter <br> conversation code with
+                        other <br> members, who can use it to join <br> your group.
+                    </p>
+                </div>
+                <div class="block-4">
+                    <img src="{% static 'img/idea.png' %}" alt="Create">
+                    <h2>Create</h2>
+                    <p>
+                        Create your own language!
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer_logo">
+            <img src="{% static 'img/logo_copy.png' %}" alt="logo_copy">
+        </div>
+        <div class="footer__section_contacts">
+            <p>
+                <span><img src="{% static 'img/assert.png' %}" alt="#"></span>
+                Connect with us
+                <span><img src="{% static 'img/assert.png' %}" alt="#"></span><br>
+            <a href="/contact" class="btn btn-info btn-lg">Contacts</a>
+            </p>
+        </div>
+    </footer>
+{% endblock content %}
